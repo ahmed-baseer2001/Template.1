@@ -1,0 +1,860 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: 6170px;
+
+}
+.head{
+    width: 100%;
+    height: 60px;
+    background-color:black;
+    overflow: auto;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 2;
+   opacity: 0.8;
+   
+}
+.logo{
+    height: 60px;
+    width: 100px;
+    margin-left: 50px;
+    border-radius: 50%;
+    float: left;
+    position: absolute;
+
+}
+ul{
+    list-style-type: none;
+    float:right;
+    margin-right: 150px;
+    
+}
+.li1{
+    margin-top: 15px;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.li1:hover a{
+    color:rgb(255, 255, 60);
+}
+
+.li1 a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+/*the header part******************************************************/
+.home{
+    width: 100wh;
+    height: 100vh;
+    background-image: url(../images/R.jfif);
+    background-position: cover;
+    position: relative;
+}
+.overlay-home{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    
+}
+.content-home{
+    width: 600px;
+    height: 200px;
+    margin: auto;
+    margin-top: 200px;
+    color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.title-home ,.p1-home{
+    padding-top:20px;
+
+}
+.title-home{
+    font-size: 50px;
+}
+.bt-home{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+.bt-learn{
+    background-color: rgb(38, 0, 255);
+    color: white;
+    margin-left: 5px;
+}
+.bt-home:hover{
+    opacity: 0.5;
+}
+/*part of absolute***********************************************/
+
+.title2{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+}
+.empty{
+    width: 200px;
+    height: 8px;
+    background-color: black;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+.big-parent1{
+    width: 100%;
+    margin: auto;
+    
+    overflow: auto;
+}
+.parent1{
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    float: left;
+    margin: 7%;  
+    position: relative;
+}
+.parent1:after{
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: black;
+}
+.parent1:hover::after{
+
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+.customizible{
+    font-size: 30px;
+    color: rgb(14, 67, 182);
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.info-cust{
+    text-align: center;
+}
+.sp2 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 60, 255);
+}
+
+/*customizable part*/
+
+/***********************************************************/
+.empty-container1{
+    width: 130px;
+    height: 7px;
+    background-color: black;
+    margin: auto;
+    margin-top: 5px;
+}
+.container1{
+    width: 100wh;
+    height: 130vh;
+    background-color:rgba(245, 245, 245, 0.849);
+    text-align: center;
+
+}
+.title-container1{
+    padding-top: 50px;
+   font-size: 50px;
+}
+
+/********************************************************/
+
+
+.container-featured{
+    width: 100wh;
+    height: 110vh;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.content2{
+    margin: 0px 50px;
+}
+.empty1{
+    width: 150px;
+    height: 8px;
+    background-color: black;
+    margin: auto;
+}
+.title-featured{
+    text-align: center;
+    font-size: 50px;
+}
+.content-featured{
+    width: 300px;
+    height: 300px;
+    /* border:  1px solid blue; */
+    position:relative;
+    float: left;
+    margin-left: 90px;
+    margin-top: 20px;
+
+}
+.img-featured img{
+    width: 280px;
+    height: 280px;
+    position:absolute;
+    padding: 10px 10px;
+
+}
+.overlay-featured{
+    position: absolute;
+    visibility: hidden;
+    color: white;
+    padding: 50px 100px;
+    z-index: 5;
+    
+
+}
+.overlay-featured h1{
+    text-align: center;
+    color: rgb(78, 78, 243);
+}
+.icons{
+    margin-left: 20px;
+   
+    
+}
+.icons i{
+    background-color: rgb(70, 129, 240);
+    font-size: 27px;
+}
+.sp-featured{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    margin-left:-40px ;
+}
+
+
+.content-featured:hover .overlay-featured{
+    visibility: visible;
+    transition: 0.3s;
+    margin-top: 8px;
+}
+ 
+.content-featured::after{
+
+    content: "";
+    position: absolute;
+ 
+    width: 0;
+    height: 0;
+ 
+    top: 0;
+    left: 0;
+ z-index: 3;
+    background-color: rgb(27, 26, 26);
+    opacity: 0;
+    transition: 1s;
+ }
+ 
+ .content-featured:hover::after{
+ 
+     width: 300px;
+     height: 300px;
+     opacity: 0.5;
+ }
+
+
+/*******************************************************************************/
+.offer{
+    width: 100wh;
+    height: 100vh;
+}
+.offer-title{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 50px;
+}
+.empty-offer{
+    width: 170px;
+    height: 7px;
+    background-color: black;
+    margin: auto;
+}
+.parent-offer{
+    overflow: auto;
+    margin-left:100px;
+    margin-top: 50px;
+}
+.offer2{
+   margin: 0px 50px;
+}
+.parent2{
+
+    margin-top:50px;
+    margin-left: 100px;
+}
+.offer4{
+    margin: 0px 50px;
+}
+.offer{
+    width: 350px;
+    height: 200px;
+    border: 1px solid grey;
+    text-align: center;
+    position:relative;
+    float: left;
+     
+}
+
+.sp-offer{
+    padding-bottom:-30px;
+    color: grey;
+}
+.offer-title2{
+    padding-top: 10px;
+}
+.icon-offer{
+    margin-top: 25px;
+    font-size: 70px;
+    color: rgb(67, 67, 250);
+}
+.i1 , .i2 , .i3 , .i4 , .i5{
+    margin-top: 25px;
+    font-size: 70px;
+    color: rgb(67, 67, 250);
+}
+.overlay-offer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(27, 26, 26,0.5);
+    visibility:hidden;
+    opacity:0;
+}
+.offer .overlay-offer:hover{
+    visibility: visible;
+    opacity: 1;
+    
+} 
+.offer:after{
+      content: "";
+      position: absolute;
+
+      width: 0;
+      height: 0;
+
+      top: 0;
+      left: 0;
+
+      background-color: rgb(39, 37, 37);
+      opacity: 0;
+      
+}
+.offer:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+
+}
+
+/******************************************************************************************/
+
+.pros{
+    width: 100wh;
+    height: 90vh;
+    background-color:whitesmoke;
+    margin-top: 255px;
+    overflow: auto;
+   
+  }
+  .empty-pros{
+    width: 100px;
+    height: 7px;
+    background-color: black;
+    margin-left: 55px;
+  }
+  .title-pros{
+    font-size: 50px;
+    padding-left: 15px;
+    padding-top: 40px;
+  }
+.p-pros{
+    padding-top: 30px;
+    padding-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+.info-pros{
+    width: 50%;
+    height: 50%;
+    
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 25px;
+    color: grey;
+}
+.img-pros{
+    width: 300px;
+    height: 400ps;
+    margin-left: 1000px;
+    margin-top: -380px;  
+}
+.list-pros{
+    width: 295px;
+    height: 100px;
+    margin-left: 1050px;
+    margin-top: -10px;
+}
+.li-pros{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-top: 20px;
+    background-color: rgb(223, 220, 220);
+    display: inline-block;
+    margin-right: -45px;
+}
+.li-pros:hover{
+    background-color: rgb(73, 73, 238);
+}
+
+/*************************************************************************************************/
+
+.background1{
+    width: 100wh;
+    height: 400px; 
+    background-image: url(../images/2016_dodge_viper_acr-wallpaper-1920x1080.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    position: relative;
+  
+}
+.overlay-bac{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+}
+.icon-bac{
+    width: 200px;
+    height: 250px;
+    margin-top: 90px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    float: left;
+    margin-left: 100px;
+}
+.ic1 , .ic2 , .ic3 , .ic4{
+    color: rgb(74, 74, 255);
+    padding-top: 60px;
+}
+
+/*********************************************************************************/
+
+.big-parent-pricing{
+    width: 100wh;
+    height: 100vh;
+    background-color: whitesmoke;
+    
+}
+.title-pri{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 50px;
+}
+.empty-pri{
+    width:150px;
+    height:7px;
+    background-color: black;
+    margin: auto;
+    margin-top: 5px;
+}
+.parent-pricing{
+    overflow: auto;
+}
+.table-pri , .table-pri2 ,.table-pri3{ 
+     width: 350px;
+    height: 400px;
+    border: 0 solid black;
+    border-radius: 5px;
+    color: white;
+    background-image: url(../images/lamborghini_47-wallpaper-1920x1080.jpg);
+    background-size:cover;
+    background-position: -180px;
+    background-repeat: no-repeat; 
+    transition: 2s;
+    float: left;
+    margin-top: 70px;
+    margin-left: 70px; 
+}
+.table-pri2 ,.table-pri3{
+    height: 415px;
+}
+
+.title1-pri2 , .title1-pri3{
+    text-align: center;
+    padding-top: 15px;
+}
+.table-pri:hover{
+    background-image: url(../images/stunning_lamborghini-wallpaper-1920x1080.jpg);
+    background-size: cover;
+    background-position: -220px;
+}
+.table-pri2{
+    background-image: url(../images/ferrari_laferrari-wallpaper-1920x1080.jpg);
+    background-size: cover;
+}
+.table-pri2:hover{
+    background-image: url(../images/ferrari_458_italia_3d_max_3-wallpaper-1920x1080.jpg);
+    background-size: cover; 
+}
+.table-pri3{
+    background-image: url(../images/dodge_charger_srt_front-wallpaper-1920x1080.jpg);
+    background-size: cover;  
+}
+.table-pri3:hover{
+  background-image: url(../images/dodge_charger_srt8_2-wallpaper-1920x1080.jpg);
+  background-size: cover;
+}
+.table-pri{
+  text-align: center;
+  padding-top: 15px;
+}
+.emp-table{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 23px;
+    background-image:url(../images/lamborghini_aventador_9-wallpaper-1920x1080.jpg);
+    background-size: cover;
+    background-position: -90px;
+}
+.em1{
+    background-image: url(../images/ferrari_enzo_red-wallpaper-1920x1080.jpg);
+    background-size: cover;
+}
+
+.em2{
+    background-image:url(../images/dodge_charger_3-wallpaper-1600x900.jpg) ;
+    background-size: cover;
+    background-position:-20px
+}
+
+.emp-tab{
+    padding-top: 80px;
+    font-size: 30px;
+}
+.emp-tab2 , .emp-tab3{
+    padding-top: 80px;
+    padding-left: 5px;
+    font-size: 30px;
+}
+.p-pricing , .p-pricing2 , .p-pricing3{
+    padding-top: 20px;
+}
+.p-pricing2 , .p-pricing{
+    text-align: center;
+}
+.bt-pri , .bt-pri2 , .bt-pri3{
+    margin-top: 20px;
+    width: 200px;
+    height: 25px;
+    border:1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.bt-pri2 , .bt-pri3{
+   margin: 20px 75px;
+}
+
+/***********************************************************************************/
+
+.background2{
+    width: 100wh;
+    height: 400px;
+    background-image: url(../images/pexels-kam-pratt-5058765\ \(1\).jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.overlay-back2{
+    width: 100%;
+    height: 400px;
+    background-color:rgba(27, 26, 26,0.5) ;
+    position: absolute;
+    overflow: auto;
+}
+.features-back2{
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-top: 90px;
+    margin-left: 255px;
+}
+.circule-back2{
+    width: 100px;
+    height: 100px;  
+    border-radius: 50%;
+    background-image: url(../images/pexels-andrea-piacquadio-3806288.jpg);
+    background-size: cover;
+    margin-top: 50px;
+}
+.circule-back3{
+    width: 100px;
+    height: 100px;  
+    border-radius: 50%;
+    background-image: url(../images/pexels-andrea-piacquadio-3855650.jpg);
+    background-size: cover;
+    margin-top: 50px;
+}
+.tit-back2 , .job-back2{
+    margin-top: -80px;
+    margin-left: 120px;
+    color: white;
+    font-size: 20px;
+    line-height: 25px;
+}
+.job-back2{
+    font-size: 15px;
+    color: rgb(58, 58, 212);
+}
+.p-back2{
+   margin-top: 40px;
+   margin-left: 30px;
+   color: white;
+}
+
+/************************************************************************************************/
+
+.title-team{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+}
+.emp-team{
+    width: 100px;
+    height: 7px;
+    background-color: black;
+    margin: auto;
+}
+.container{
+    width: 80%;
+    margin:auto;
+    margin-top: 100px;
+    
+}
+
+.team-content{
+    overflow: auto;
+}
+
+.team-item{
+    float: left;
+    width: 28%;
+    background-color: rgb(204, 204, 204);
+    padding: 17px 25px;
+    text-align: center;
+    position: relative;
+    
+}
+.ah{
+    margin: 0px 10px;
+}
+.team-img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-img img{
+    width: 100%;
+}
+.team-overlay{
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   background-color: rgba(22,24,25 ,0.5 );
+   visibility: hidden;
+   opacity: 0;
+}
+.team-item:hover .team-overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.team-overlay a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(95, 148, 209);
+    color: #fff;
+   
+}
+.team-overlay a i{
+    line-height: 30px;
+}
+.team-info-title1{
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.team-item:after{
+    content:"" ;
+    position:absolute;
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(43, 37, 37);
+    opacity:0;
+}
+.team-item:hover::after{
+    width: 100%;
+    height: 100% ;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+/*******************************************************************************************/
+.tit-news{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 50px;
+}
+.emp-news{
+    width: 150px;
+    height: 7px;
+    background-color:black ;
+    margin: auto;
+}
+.news{
+    width: 350px;
+    height: 530px;
+    position: relative;
+    float: left;
+    margin-top: 60px;
+    margin-left: 70px;
+    
+}
+.img-news{
+    margin-left: 15px;
+}
+.icons-news{
+    display: inline-block;
+    margin-left:15px;
+    margin-top: 15px;
+    word-spacing: 5px;
+    font-size: 13px;
+    color: rgb(63, 63, 248);
+}
+.s-news{
+    color: black;
+}
+.tit1-news{
+    margin: 15px 15px;
+    font-size: 25px;
+}
+.eng-news{
+    margin-left: 15px;
+    color: gray;
+    font-size: 15px;
+}
+.s1-news , .a-news {
+    text-align: center;
+    margin-top: 17px;
+    font-size: 20px;
+    color: rgb(52, 52, 255);
+    text-decoration: none;
+}
+.overlay-news{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(84, 84, 255);
+    visibility:hidden;
+    opacity:0;
+}
+.news .overlay-news:hover{
+    visibility: visible;
+    opacity: 0.5;
+}
+.news:after{
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    right: 0;
+    
+
+    background-color:rgb(111, 111, 255);
+    opacity: 0;
+    
+}
+.news:hover::after{
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  transition: 1s;
+
+}
+
+/**********************************************************************************/
+
+.final-background{
+    width: 100%;
+    height: 400px;
+    background-color:rgb(0, 0, 0);
+    margin-top: 600px;
+}
+.icons-final{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+    color: rgb(75, 75, 255); 
+    cursor: pointer; 
+}
+.p-final{
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 15px;
+}
+/*************************************************************************************/
